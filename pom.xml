@@ -41,7 +41,7 @@
         <mybatis.starter.version>1.3.2</mybatis.starter.version>
         <common-lang3.version>3.12.0</common-lang3.version>
         <commons-pool2.version>2.8.1</commons-pool2.version>
-        <dubbo.version>2.7.3</dubbo.version>
+        <dubbo.version>2.7.8</dubbo.version>
         <curator.version>2.8.0</curator.version>
     </properties>
 

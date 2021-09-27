@@ -10,7 +10,7 @@ import java.io.Serializable;
  * @Description
  */
 @Data
-public class TomDto implements Serializable {
+public class JerryDto implements Serializable {
     private static final long serialVersionUID = -3048491701622546551L;
     
     private String name;

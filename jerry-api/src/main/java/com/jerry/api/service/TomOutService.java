@@ -1,6 +1,6 @@
 package com.jerry.api.service;
 
-import com.jerry.api.dto.TomCommend;
+import com.jerry.api.dto.JerryCommend;
 import com.jerry.common.base.resp.RespBody;
 
 /**
@@ -10,6 +10,6 @@ import com.jerry.common.base.resp.RespBody;
  */
 public interface TomOutService {
 
-    RespBody<String> getName(TomCommend jerryCommend);
+    RespBody<String> getName(JerryCommend jerryCommend);
 
 }

@@ -25,6 +25,11 @@
             <artifactId>jerry-infrastructure</artifactId>
             <version>1.0.3-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>com.tom</groupId>
+            <artifactId>tom-api</artifactId>
+            <version>1.0.0</version>
+        </dependency>
     </dependencies>
 
 

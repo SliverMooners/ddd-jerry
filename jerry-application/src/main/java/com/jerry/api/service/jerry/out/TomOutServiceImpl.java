@@ -1,6 +1,6 @@
 package com.jerry.api.service.jerry.out;
 
-import com.jerry.api.dto.TomCommend;
+import com.jerry.api.dto.JerryCommend;
 import com.jerry.api.service.TomOutService;
 import com.jerry.common.base.resp.RespBody;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,10 +15,10 @@ import org.springframework.stereotype.Service;
 public class TomOutServiceImpl implements TomOutService {
 
     @Autowired
-    TomOutManager jerryOutManager;
+    JerryOutManager jerryOutManager;
 
     @Override
-    public RespBody<String> getName(TomCommend jerryCommend) {
-        return RespBody.ok(jerryOutManager.getById(jerryCommend).getName());
+    public RespBody<String> getName(JerryCommend jerryCommend) {
+        return RespBody.ok(jerryOutManager.getById(jerryCommend));
     }
 }

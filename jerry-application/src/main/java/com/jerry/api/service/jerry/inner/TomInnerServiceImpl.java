@@ -1,6 +1,6 @@
 package com.jerry.api.service.jerry.inner;
 
-import com.jerry.api.dto.jerry.TomDto;
+import com.jerry.api.dto.jerry.JerryDto;
 import com.jerry.api.dto.jerry.TomQueryByIdCommand;
 import com.jerry.api.service.TomInnerService;
 import com.jerry.common.base.resp.RespBody;
@@ -19,7 +19,7 @@ public class TomInnerServiceImpl implements TomInnerService {
     TomInnerManager jerryQueryManager;
 
     @Override
-    public RespBody<TomDto> getById(TomQueryByIdCommand jerryQueryByIdCommand) {
+    public RespBody<JerryDto> getById(TomQueryByIdCommand jerryQueryByIdCommand) {
         return RespBody.ok(jerryQueryManager.getById(jerryQueryByIdCommand));
     }
 }

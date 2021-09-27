@@ -1,6 +1,6 @@
 package com.jerry.api.service.jerry.inner;
 
-import com.jerry.api.dto.jerry.TomDto;
+import com.jerry.api.dto.jerry.JerryDto;
 import com.jerry.api.dto.jerry.TomQueryByIdCommand;
 import com.jerry.common.utils.BeanCopyUtils;
 import com.jerry.domain.jerry.Tom;
@@ -18,9 +18,9 @@ public class TomInnerManager {
     @Autowired
     TomRepository jerryRepository;
 
-    public TomDto getById (TomQueryByIdCommand jerryQueryByIdCommand){
+    public JerryDto getById (TomQueryByIdCommand jerryQueryByIdCommand){
         Tom jerry = jerryRepository.getById(jerryQueryByIdCommand.getId());
-        return BeanCopyUtils.convert(jerry, TomDto.class);
+        return BeanCopyUtils.convert(jerry, JerryDto.class);
     }
 
 }

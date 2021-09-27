@@ -1,6 +1,6 @@
 package com.jerry.api.service;
 
-import com.jerry.api.dto.jerry.TomDto;
+import com.jerry.api.dto.jerry.JerryDto;
 import com.jerry.api.dto.jerry.TomQueryByIdCommand;
 import com.jerry.common.base.resp.RespBody;
 
@@ -11,6 +11,6 @@ import com.jerry.common.base.resp.RespBody;
  */
 public interface TomInnerService {
 
-    RespBody<TomDto> getById(TomQueryByIdCommand jerryQueryByIdCommand);
+    RespBody<JerryDto> getById(TomQueryByIdCommand jerryQueryByIdCommand);
 
 }
