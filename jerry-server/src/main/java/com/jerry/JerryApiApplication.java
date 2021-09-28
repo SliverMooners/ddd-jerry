@@ -13,7 +13,7 @@ import java.util.Arrays;
  * @author jerry
  */
 @Slf4j
-@EnableDubbo(scanBasePackages = "com.tom.api.service")
+@EnableDubbo(scanBasePackages = "com.jerry.api.service.jerry.out")
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 public class JerryApiApplication {
 

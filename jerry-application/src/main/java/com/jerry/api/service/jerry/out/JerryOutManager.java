@@ -5,7 +5,6 @@ import com.tom.api.dto.TomCommend;
 import com.tom.api.service.TomOutService;
 import com.tom.common.base.resp.RespBody;
 import org.apache.dubbo.config.annotation.DubboReference;
-import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.stereotype.Component;
 
 
@@ -15,7 +14,7 @@ import org.springframework.stereotype.Component;
 @Component("jerryOutManager")
 public class JerryOutManager {
 
-    @DubboReference(version = "1.0.0",check = false)
+    @DubboReference(version = "1.0.0",group = "tom")
     TomOutService tomOutService;
 
     public String getById (JerryCommend jerryCommend){

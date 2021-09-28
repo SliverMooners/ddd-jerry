@@ -1,9 +1,12 @@
 package com.jerry.common.base.resp;
 
+import java.io.Serializable;
+
 /**
  * 为interfaces(用户界面层) 提供组件配置
  */
-public class RespBody<T> {
+public class RespBody<T> implements Serializable {
+    private static final long serialVersionUID = -2187443410643872850L;
     /**
      * 自定义业务码
      */
