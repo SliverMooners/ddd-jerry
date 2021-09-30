@@ -42,8 +42,9 @@
         <mybatis.starter.version>1.3.2</mybatis.starter.version>
         <common-lang3.version>3.12.0</common-lang3.version>
         <commons-pool2.version>2.8.1</commons-pool2.version>
-        <dubbo.version>2.7.14</dubbo.version>
-        <curator.version>5.1.0</curator.version>
+        <dubbo.version>2.7.8</dubbo.version>
+        <curator.version>4.0.1</curator.version>
+        <nacos.version>2.7.8</nacos.version>
     </properties>
 
 
@@ -128,6 +129,12 @@
                 <groupId>org.apache.dubbo</groupId>
                 <artifactId>dubbo-spring-boot-starter</artifactId>
                 <version>${dubbo.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-registry-nacos</artifactId>
+                <version>${nacos.version}</version>
             </dependency>
 
             <dependency>
